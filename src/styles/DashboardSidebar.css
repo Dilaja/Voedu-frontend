@@ -1,0 +1,89 @@
+/* Ensure Sidebar Starts Below Navbar */
+.sidebar {
+    width: 250px;
+    background-color: #003366; /* Dark Blue */
+    height: calc(100vh - 0px); /* Adjust height based on navbar height */
+    position: fixed;
+    top: 0px; /* Push sidebar below the navbar */
+    left: 0;
+    padding-top: 20px;
+    color: white;
+    z-index: 100;
+    overflow-y: auto; /* Make the sidebar scrollable */
+    padding-bottom: 20px; /* Optional: Adds padding at the bottom of the sidebar */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    width: 100%;
+    height: 60px; /* Set navbar height */
+    background-color: #002244; /* Darker Blue */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000; /* Ensure navbar stays above sidebar */
+  }
+  
+  /* Sidebar Profile Section */
+  .profile-section {
+    
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ffffff33;
+  }
+  
+  .profile-section h5,
+  .profile-section p {
+    color: white;
+  }
+  
+  /* Sidebar Navigation Links */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white !important;
+    padding: 10px 13px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  .nav-item:hover {
+    background-color: #0875f3;
+    color: white !important;
+  }
+  
+  /* Submenu Styles */
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  
+  .submenu-item {
+    color: white !important;
+    padding: 8px 15px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .submenu-item:hover {
+    background-color: #f1f3f5;
+    color: white !important;
+  }
+ 
+  
