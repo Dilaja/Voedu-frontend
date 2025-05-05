@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: [self-hosted, windows-ec2, frontend] 
+    runs-on: [self-hosted, Windows, X64] 
     steps:
     - name: Checkout frontend code
       uses: actions/checkout@v3
