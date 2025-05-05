@@ -18,7 +18,7 @@ const StudentCourseCurriculum = () => {
           const enrolledCourses = res.data.enrolledCourses || [];
           const materials = res.data.materials || [];
   
-          // Combine course info with its materials
+          
           const coursesWithMaterials = enrolledCourses.map((course) => {
             const courseMaterials = materials.find((m) =>
               m.course_id === course.course_id._id || m.course_id.toString() === course.course_id._id.toString()
@@ -56,7 +56,7 @@ const StudentCourseCurriculum = () => {
           <h4 className="text-left" style={{ color: "#ff5733" }}>My Course Material</h4>
   
           {courses.length === 0 ? (
-            <p>You are not enrolled in any courses yet.</p>
+            <p>You are not enrolled in any courses</p>
           ) : (
             <>
               <Card className="mb-4">
