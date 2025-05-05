@@ -112,7 +112,7 @@ const CustomTabs = () => {
                 <Form>
                   <h4 className="mb-3">Send Message</h4>
                   <Form.Group className="mb-">
-                  <Form.Label>Recipient</Form.Label>
+                  <Form.Label>Select Recipient</Form.Label>
                   <Form.Select
   name="receiver_id"
   value={messageData.receiver_id}
